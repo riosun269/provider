@@ -21,9 +21,9 @@ pipeline {
         stage('Build and Verify Pact') {
             steps {
                 sh '''
-                mvn clean verify
-                GIT_COMMIT=$(git log --format=format:%s -1)
-                mvn clean install  -Dpact.verifier.publishResults=true -Dpact.provider.version=$GIT_COMMIT
+                    mvn clean verify 
+                    GIT_COMMIT=$(git log --format=format:%s -1)
+                    mvn clean install  -Dpact.verifier.publishResults=true -Dpact.provider.version=$GIT_COMMIT
                 '''
             }
         }

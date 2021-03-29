@@ -24,7 +24,7 @@ import org.springframework.boot.test.mock.mockito.MockBean;
 @Provider("user-service")
 //@PactFolder("/Users/rio/Documents/RioApps/CDC/cdc-with-pact-master/messaging-app/target/pacts")
 //@PactBroker(host = "localhost", port = "80")
-@PactBroker(host = "riosun269.pactflow.io", scheme = "https", authentication = @PactBrokerAuth(scheme = "Bearer", username = "FMGUYGlb1IMOAnLCBUNmOQ", password = ""), tags = "${pact.tags}")
+@PactBroker(host = "riosun269.pactflow.io", scheme = "https", authentication = @PactBrokerAuth(scheme = "Bearer", username = "FMGUYGlb1IMOAnLCBUNmOQ", password = ""))
 @SpringBootTest(webEnvironment = SpringBootTest.WebEnvironment.RANDOM_PORT)
 public class MockedUserServiceContractTest {
 
