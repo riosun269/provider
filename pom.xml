@@ -60,20 +60,6 @@
               </includes>
             </configuration>
           </plugin>
-          <plugin>
-            <groupId>au.com.dius.pact.provider</groupId>
-            <artifactId>maven</artifactId>
-            <version>4.1.11</version>
-            <configuration>
-              <projectVersion>${pact.provider.version}</projectVersion>
-              <reports>
-                <report>console</report>
-                <report>json</report>
-                <report>markdown</report>
-              </reports>
-
-            </configuration>
-          </plugin>
         </plugins>
       </build>
     </profile>
